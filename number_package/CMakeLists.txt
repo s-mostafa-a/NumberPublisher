@@ -119,7 +119,7 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-add_executable(cv_test src/opencv_test.cpp)
+add_executable(cv_test src/publisher.cpp)
 target_link_libraries(cv_test ${catkin_LIBRARIES})
 
 ## Declare a C++ library
