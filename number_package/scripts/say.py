@@ -38,7 +38,7 @@ def listen():
     rospy.Subscriber("/sayings", String, say);
 
 if __name__ == '__main__':
-    rospy.sleep(5)
+    rospy.sleep(0.5)
     rospy.init_node('your_sayings', anonymous=True)
     listen();
     if len(sys.argv) > 1 and sys.argv[1] == '--help':
