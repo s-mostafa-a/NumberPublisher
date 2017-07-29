@@ -119,8 +119,8 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-add_executable(cv_test src/publisher.cpp)
-target_link_libraries(cv_test ${catkin_LIBRARIES})
+add_executable(publisher src/publisher.cpp)
+target_link_libraries(publisher ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

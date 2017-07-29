@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="mine" type="cv_test" name="hi" output="screen"/>
+    <node pkg="number_package" type="publisher" name="publisher" output="screen"/>
 </launch>
