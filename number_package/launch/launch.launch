@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <launch>
     <node pkg="number_package" type="publisher" name="publisher" output="screen"/>
+    <node pkg="sound_play" type="soundplay_node.py" name="sound_play" output="screen"/>
 </launch>
