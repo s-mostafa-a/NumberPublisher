@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="sound_play" type="soundplay_node.py" name="sound_play" output="screen"/>
+    <!--node pkg="mine" type="say.py" name="saying" output="screen"/-->
+</launch>
