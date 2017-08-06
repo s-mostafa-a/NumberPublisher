@@ -3,9 +3,9 @@ The package is written for ros environment which one node publishes continously 
 ---
 In on terminal type:
 ```
-roslaunch number_package first.launch 
+roslaunch number_package launch.launch 
 ```
 then in another one:
 ```
-rosrun number_package say.launch 
+rosrun number_package say.py 
 ```
