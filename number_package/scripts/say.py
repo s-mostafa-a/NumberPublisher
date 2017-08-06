@@ -34,13 +34,17 @@ def say(str):
 
     soundhandle.say(s, voice, volume)
 
-def listen():
-    rospy.Subscriber("/sayings", String, say);
+def listen(topic):
+    rospy.Subscriber(topic, String, say);
 
 if __name__ == '__main__':
     rospy.sleep(0.5)
     rospy.init_node('your_sayings', anonymous=True)
-    listen();
+    topic = ' '
+    while not rospy.has_param('say/reading_topic'):
+        topic = rospy.get_param('say/reading_topic')
+    print topic + '_____________________________________________';
+    listen(topic);
     if len(sys.argv) > 1 and sys.argv[1] == '--help':
         print 'Usage: %s \'String to say.\''%sys.argv[0]
         print '       %s < file_to_say.txt'%sys.argv[0]
